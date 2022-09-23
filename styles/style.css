@@ -27,7 +27,7 @@ button{
     cursor: pointer;
 }
 
-.popup{
+.container{
     width: 600px;
     padding: 20px;
 }
