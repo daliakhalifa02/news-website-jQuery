@@ -4,17 +4,23 @@ $.ajax({
     dataType: 'json',
     success:function(data){
         console.log(data)
-        var html_append = "";
+        var title = "";
+        var date = "";
+        var text = "";
+        
         $.each(data,function(index, item){
-            html_append +=
-            '<li><strong>News: </strong>' +
-            item.text +
-            '&nbsp; &nbsp; <strong>Date: </strong>' +
-            item.date +
-            '&nbsp; &nbsp; <strong>Title: </strong>' +
-            item.title +
-            '</li>';
+            title +=
+            '<strong>Title: </strong>' +
+            item.title ;
+            date+=
+            '<strong>Date: </strong>' +
+            item.date ;
+            text +=
+            '<strong>Details: </strong>' +
+            item.text 
         });
-        $("#mysqltojson").html(html_append)
+        $("#title").html(title)
+        $("#date").html(date)
+        $("#text").html(text)
     }
 })
