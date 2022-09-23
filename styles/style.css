@@ -7,7 +7,7 @@ h1{
     text-align: center;
 }
 
-.title{
+#title{
     font-size: 30px;
     color: rgb(172, 59, 59);
     border: 2px solid black;
