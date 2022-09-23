@@ -22,5 +22,6 @@ button{
     margin: auto;
     border: none;
     border-radius: 5px;
-    background-color: aqua;
+    background-color: rgb(106, 211, 211);
+    font-weight: bold;
 }
